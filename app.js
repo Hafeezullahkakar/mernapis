@@ -35,7 +35,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(cors())
 
-const connection = mongoose.connect('mongodb://localhost:27017/Portfolio', { useNewUrlParser: true, useUnifiedTopology: true });
+const connection = mongoose.connect('mongodb+srv://syedSense:syedSense@muzilcluster.zjnu5ds.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 connection.then((db) => {
     console.log("Connected correctly to mongodb");
 }, (err) => { console.log(err); });
